@@ -14,4 +14,20 @@
     </modules>
 
 
+
+    <properties>
+        <scala.version>2.11</scala.version>
+        <spark.version>2.4.0</spark.version>
+        <scopeType>provided</scopeType>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_${scala.version}</artifactId>
+            <version>${spark.version}</version>
+            <scope>${scopeType}</scope>
+        </dependency>
+    </dependencies>
+
 </project>
